@@ -1,0 +1,14 @@
+- what do i wanna do? i dont know
+- simple crud for:
+  - user
+  - garden
+  - wallet
+- payment gateway
+- i want it to use grpc
+- i want to use:
+  - redis
+  - postgres
+  - singleflight
+  - circuit breaker
+
+try to built that for now

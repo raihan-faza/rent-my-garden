@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package garden;
+
+import "google/protobuf/timestamp.proto";
+
+service AuthService {
+  rpc CreateGarden(GardenRequest) returns (GardenResponse);
+  rpc UpdateGarden(GardenRequest) returns (GardenResponse);
+  rpc DeleteGarden(GardenRequest) returns (GardenResponse);
+}
+
+message GardenRequest {
+   string GardenName = 1;
+   double GardenCapacity = 2;
+   double GardenRentPrice = 3;
+   string OwnerID = 4;
+}
+
+message GardenResponse {
+  string ResponseCode = 1;
+  string GardenID = 2;
+  string GardenName = 3;
+  string GardenPrice = 4;
+  string GardenCapacity = 5;
+}
