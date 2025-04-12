@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package garden;
 
-import "google/protobuf/timestamp.proto";
+option go_package = "github.com/raihan-faza/rent-my-garden/pb";
 
 service AuthService {
   rpc CreateGarden(GardenRequest) returns (GardenResponse);
